@@ -44,7 +44,8 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.baseURL = '/super-rentals';
+    ENV.locationType = 'hash';
   }
 
   ENV.MAPBOX_ACCESS_TOKEN =
